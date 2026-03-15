@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>【粉肝夜市萬家香 Pinkliver say yes】 大會商品</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Grand+Hotel&display=swap" rel="stylesheet">
+
+<link href="css/styles.css" rel="stylesheet" />
+
+
+</head>
+
+
+<body>
+
+
+<!-- Header -->
+
+<header class="shrink">
+
+<nav>
+
+<div class="menuLeft">
+
+<a href="booth.html">社團名單</a>
+<a href="event.html">特別活動</a>
+
+</div>
+
+<div class="logo">
+<a href="index.html"><img src="img/pinkliveronly_logo.png"></a>
+</div>
+
+<div class="menuRight">
+
+<a class="active" href="goods.html">大會商品</a>
+<a href="faq.html">常見問題</a>
+
+</div>
+
+<div class="menuBtn" onclick="toggleMenu()">☰</div>
+
+</nav>
+
+<div class="mobileMenu" id="mobileMenu">
+
+<a href="booth.html">社團名單</a>
+<a href="event.html">特別活動</a>
+<a href="goods.html">大會商品</a>
+<a href="faq.html">常見問題</a>
+
+</div>
+
+</header>
+
+
+<section class="infoSection firstSection">
+
+<div class="infoContainer">
+
+<div class="infoCard">
+
+<h2 class="title">Coming Soon...</h2>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+  主催 粉肝連攤管理委員會 <a href="mailto: pinkliveronlycrew@gmail.com">pinkliveronlycrew@gmail.com</a> All Rights Reserved
+</footer>
+
+
+<script>
+
+
+/* Loading */
+
+const start = Date.now()
+const minTime = 3000
+
+let progress = 0
+
+const bar = document.getElementById("progressFill")
+const text = document.getElementById("progressText")
+
+const timer = setInterval(()=>{
+
+progress += Math.random()*8
+
+if(progress > 100){
+progress = 100
+}
+
+bar.style.width = progress + "%"
+text.innerText = Math.floor(progress) + "%"
+
+if(progress >= 100){
+clearInterval(timer)
+finishLoading()
+}
+
+},120)
+
+
+function finishLoading(){
+
+const elapsed = Date.now() - start
+const remain = Math.max(0,minTime-elapsed)
+
+setTimeout(()=>{
+
+const loader = document.getElementById("loadingScreen")
+
+loader.style.opacity = 0
+
+setTimeout(()=>{
+loader.style.display="none"
+
+document.querySelector(".hero").classList.add("animate")
+
+},600)
+
+},remain)
+
+}
+
+
+/* Mobile menu */
+
+function toggleMenu(){
+
+document.getElementById("mobileMenu").classList.toggle("active")
+
+}
+
+
+/* smooth scroll */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+anchor.addEventListener('click',function(e){
+
+e.preventDefault()
+
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+
+behavior:'smooth'
+
+})
+
+})
+
+})
+
+</script>
+
+<script src="js/heroIcons.js"></script>
+<script src="js/scrollIndicator.js"></script>
+<script src="js/sparkle.js"></script>
+
+
+</body>
+</html>
