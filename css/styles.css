@@ -6,6 +6,14 @@ margin:0;
 background:#fafafa;
 }
 
+a {
+  color: #4565A6;
+}
+
+a:hover {
+  color: #DE7647;
+}
+
 .fs-small{
 font-size:12px;
 }
@@ -842,15 +850,24 @@ padding:10px;
     left: -9999px;
   }
   
-  tr {  margin-bottom: 10px; }
+  tr {
+    margin-bottom: 10px;
+    position: relative;
+  }
   
   td {
     border: none;
     position: relative;
-      width: 95%; /* Or any defined width */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 40px;
+  }
+
+  .unite {
+    position: absolute;
+    padding-left: 0px;
   }
 
 }
@@ -887,10 +904,19 @@ border-bottom:6px solid #DDD;
 
 .qaQ,
 .qaA{
-display:flex;
-align-items:flex-start;
-gap:14px;
 line-height:1.7;
+}
+
+.qaQ::after,
+.qaA::after {
+content: "";
+display: block;
+clear: both;
+}
+
+.qaQ p,
+.qaA p{
+padding-left: 38px;
 }
 
 .qaQ{
@@ -904,16 +930,15 @@ color:#555;
 }
 
 .qaLabel{
-flex-shrink:0;
+float: left;
 width:28px;
 height:28px;
 border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
 font-weight:700;
 font-size:14px;
 color:white;
+text-align:center;
+margin-right:10px;
 }
 
 .qaQ .qaLabel{
