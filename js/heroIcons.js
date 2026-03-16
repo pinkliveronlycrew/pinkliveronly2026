@@ -68,8 +68,13 @@ texts:["粉肝幫QQ地瓜球"]
 
 /* -------- 設定 -------- */
 
-const iconSize = 170
-const maxIcons = 6
+/* 手機 icon 自動縮小 */
+
+const iconSize = window.innerWidth < 768 ? 120 : 170
+
+/* 手機 icon 數量減少 */
+
+const maxIcons = window.innerWidth < 768 ? 4 : 6
 
 const activeIcons = []
 
@@ -186,13 +191,14 @@ indicatorTopPercent =
 
 /* 左右 padding */
 
-let sidePadding = 8
+const iconWidthPercent = (iconSize / heroWidth) * 100
+let sidePadding = iconWidthPercent / 2
 
-/* 桌機左右 300px */
+/* 桌機左右 200px */
 
 if(window.innerWidth > 768){
 
-const safePx = 300
+const safePx = 200
 const safePercent = (safePx / heroWidth) * 100
 
 sidePadding = Math.max(sidePadding, safePercent)
@@ -232,7 +238,7 @@ y = Math.random()*(indicatorTopPercent-minTopPercent)+minTopPercent
 
 tries++
 
-}while(overlap(x,y) && tries<40)
+}while(overlap(x,y) && tries<80)
 
 /* 記錄位置 */
 
