@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Grand+Hotel&display=swap" rel="stylesheet">
 
-<link href="css/styles.css?202603161" rel="stylesheet" />
+<link href="css/styles.css?202604022" rel="stylesheet" />
 
 <link rel="shortcut icon" href="img/favicon.ico" />
 <link rel="bookmark" href="img/favicon.ico" />
@@ -104,187 +104,80 @@
 
 <section id="home" class="hero">
 
-<div class="heroSparkles sparkle1">
+<div class="mainCharacter">
 
-<!-- outline star -->
-<svg class="sparkle s1" viewBox="0 0 120 120">
-<path d="
-M50 8
-C54 22 56 32 60 40
-C72 44 84 46 92 50
-C84 54 72 56 60 60
-C56 68 54 78 50 92
-C46 78 44 68 40 60
-C28 56 16 54 8 50
-C16 46 28 44 40 40
-C44 32 46 22 50 8
-Z
-"
-
-fill="#FFFFFF"
-stroke="#D97745"
-stroke-width="6"
-stroke-linecap="round"
-stroke-linejoin="round"
-/>
-</svg>
-
-<!-- filled star -->
-<svg class="sparkle s2" viewBox="0 0 120 120">
-<path d="
-M50 8
-C54 22 56 32 60 40
-C72 44 84 46 92 50
-C84 54 72 56 60 60
-C56 68 54 78 50 92
-C46 78 44 68 40 60
-C28 56 16 54 8 50
-C16 46 28 44 40 40
-C44 32 46 22 50 8
-Z
-"
-
-fill="#D97745"
-/>
-</svg>
-
-<!-- outline -->
-<svg class="sparkle s3" viewBox="0 0 120 120">
-
-<path d="
-M50 8
-C54 22 56 32 60 40
-C72 44 84 46 92 50
-C84 54 72 56 60 60
-C56 68 54 78 50 92
-C46 78 44 68 40 60
-C28 56 16 54 8 50
-C16 46 28 44 40 40
-C44 32 46 22 50 8
-Z
-"
-
-fill="#FFFFFF"
-stroke="#D97745"
-stroke-width="6"
-stroke-linecap="round"
-stroke-linejoin="round"
-/>
-
-</svg>
-
-<!-- filled -->
-<svg class="sparkle s4" viewBox="0 0 120 120">
-<path d="
-M50 8
-C54 22 56 32 60 40
-C72 44 84 46 92 50
-C84 54 72 56 60 60
-C56 68 54 78 50 92
-C46 78 44 68 40 60
-C28 56 16 54 8 50
-C16 46 28 44 40 40
-C44 32 46 22 50 8
-Z
-"
-
-fill="#D97745"
-/>
-</svg>
+<img src="img/main-character1.png">
 
 </div>
 
-<div class="heroSparkles sparkle2">
+<div class="mainFront">
 
-<!-- outline star -->
-<svg class="sparkle s1" viewBox="0 0 120 120">
-<path d="
-M50 8
-C54 22 56 32 60 40
-C72 44 84 46 92 50
-C84 54 72 56 60 60
-C56 68 54 78 50 92
-C46 78 44 68 40 60
-C28 56 16 54 8 50
-C16 46 28 44 40 40
-C44 32 46 22 50 8
-Z
-"
-
-fill="#FFFFFF"
-stroke="#D97745"
-stroke-width="6"
-stroke-linecap="round"
-stroke-linejoin="round"
-/>
-</svg>
-
-<!-- filled star -->
-<svg class="sparkle s2" viewBox="0 0 120 120">
-<path d="
-M50 8
-C54 22 56 32 60 40
-C72 44 84 46 92 50
-C84 54 72 56 60 60
-C56 68 54 78 50 92
-C46 78 44 68 40 60
-C28 56 16 54 8 50
-C16 46 28 44 40 40
-C44 32 46 22 50 8
-Z
-"
-
-fill="#D97745"
-/>
-</svg>
-
-<!-- outline -->
-<svg class="sparkle s3" viewBox="0 0 120 120">
-
-<path d="
-M50 8
-C54 22 56 32 60 40
-C72 44 84 46 92 50
-C84 54 72 56 60 60
-C56 68 54 78 50 92
-C46 78 44 68 40 60
-C28 56 16 54 8 50
-C16 46 28 44 40 40
-C44 32 46 22 50 8
-Z
-"
-
-fill="#FFFFFF"
-stroke="#D97745"
-stroke-width="6"
-stroke-linecap="round"
-stroke-linejoin="round"
-/>
-
-</svg>
-
-<!-- filled -->
-<svg class="sparkle s4" viewBox="0 0 120 120">
-<path d="
-M50 8
-C54 22 56 32 60 40
-C72 44 84 46 92 50
-C84 54 72 56 60 60
-C56 68 54 78 50 92
-C46 78 44 68 40 60
-C28 56 16 54 8 50
-C16 46 28 44 40 40
-C44 32 46 22 50 8
-Z
-"
-
-fill="#D97745"
-/>
-</svg>
+<img src="img/main-front1.png">
 
 </div>
 
-<div class="heroIcons" id="heroIcons"></div>
+<canvas id="bokeshi"></canvas>
+
+<div class="starWrap">
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+</div>
 
 <div class="scrollIndicator">
 <span></span>
@@ -311,6 +204,28 @@ fill="#D97745"
 <a href="https://boogooteam.com/zhTW/activity/22/info" target="_blank">【CooMIC 二元創庫 4】</a>
 </li>
 <li><strong>攤位</strong>　40 SP</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="updateSection">
+
+<div class="infoContainer">
+
+<h3 class="sub-title">最近更新</h3>
+<h2 class="title">Updates</h2>
+
+<div class="infoCard">
+
+<ul>
+
+<li><strong>4/4</strong>　2.0 主視覺公開</li>
+<li><strong>3/18</strong>　網站正式上線</li>
 
 </ul>
 
@@ -411,7 +326,7 @@ loader.style.display="none"
 
 document.querySelector(".hero").classList.add("animate")
 
-},600)
+},50)
 
 },remain)
 
@@ -451,6 +366,8 @@ behavior:'smooth'
 <script src="js/heroIcons.js"></script>
 <script src="js/scrollIndicator.js"></script>
 <script src="js/sparkle.js"></script>
+<script src="js/bokeshi.js?202604021"></script>
+<script src="js/stars.js"></script>
 
 
 </body>
