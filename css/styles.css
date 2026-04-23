@@ -1217,7 +1217,7 @@ padding:10px;
 /* 成員 */
 .members {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   font-size: 14px;
   color: #333;
 }
