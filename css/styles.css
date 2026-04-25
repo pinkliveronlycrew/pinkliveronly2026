@@ -1335,3 +1335,345 @@ font-size:12px;
 footer a{
 color:#888;
 }
+
+
+/* ===== Stamp Event ===== */
+
+.stamp-event {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ===== Hero ===== */
+
+.stamp-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+/* 左側文字 */
+.hero-text {
+  flex: 0.8;
+}
+
+/* 右側圖片 */
+.hero-image {
+  flex: 1.2;
+  text-align: right;
+}
+
+.hero-tag {
+  display: inline-block;
+  padding: 8px 15px;
+  border: 2px solid #ff5a5f;
+  color: #ff5a5f;
+  border-radius: 999px;
+  font-size: 18px;
+}
+
+.stamp-hero h1 {
+  font-size: 42px;
+  margin-bottom: -20px;
+}
+
+.stamp-hero h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.stamp-event .highlight {
+  color: #ff5a5f;
+}
+
+.stamp-hero p {
+  line-height: 10px;
+  font-size: 15px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 手機版 */
+@media (max-width: 768px) {
+  .stamp-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Highlight */
+.stamp-highlight {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 25px 25px;
+  margin: 20px 0px 50px 0px;
+  background: #FFF2F1;
+  border-radius: 16px;
+  overflow-x: auto;
+}
+
+/* 每個項目 */
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  color: #333;
+}
+
+.highlight-item .icon {
+  font-size: 26px;
+}
+
+.highlight-item .text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* 分隔線 */
+.divider {
+  height: 32px;
+  border-right: 1px solid #F2C7C5;
+}
+
+/* 警示區 */
+.highlight-warning {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.warn-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #ff4d4f;
+  color: #ff4d4f;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight-warning .text {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* 手機優化 */
+@media (max-width: 600px) {
+  .stamp-event {
+    padding: 40px 0px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .highlight-warning {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+/* ===== Steps ===== */
+
+.stamp-steps {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+/* 卡片 */
+.step-card {
+  position: relative;
+  flex: 1;
+  padding: 24px 16px 20px;
+  border: 1px solid #f1c7c7;
+  border-radius: 16px;
+  background: #fff;
+  text-align: center;
+}
+
+/* 上方紅色數字 */
+.step-number {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  background: #ff5a5f;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* icon */
+.step-icon {
+  font-size: 40px;
+  margin: 10px 0px;
+}
+
+/* 標題 */
+.step-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* 文字 */
+.step-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* 小標籤 */
+.step-tag {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px 10px;
+  background: #ff5a5f;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+/* 箭頭 */
+.step-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff5a5f;
+  font-size: 40px;
+  padding: 0px 0px 10px 0px;
+}
+
+/* 下方備註 */
+.step-note {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin-top: 16px;
+}
+
+/* 手機版 */
+@media (max-width: 768px) {
+  .stamp-steps {
+    flex-direction: column;
+  }
+
+  .step-arrow {
+    transform: rotate(90deg);
+    margin: 0px 0px 7px 0px;
+  }
+}
+
+/* ===== Info ===== */
+
+.stamp-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+/* 卡片 */
+.info-card {
+  padding: 20px;
+  border-radius: 16px;
+  background: #FFF2F1;
+  text-align: center;
+}
+
+/* 標題區 */
+.info-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #ff5a5f;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* icon */
+.info-icon {
+  font-size: 18px;
+}
+
+/* 內容 */
+.info-content {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 時間放大 */
+.info-content.big {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* 手機 */
+@media (max-width: 768px) {
+  .stamp-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CTA */
+.stamp-cta {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.stamp-cta p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.stamp-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 20px 30px;
+  background: #ff4d4f;
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.stamp-btn:hover {
+  color: #fff;
+  background: #E67848;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .stamp-highlight {
+    flex-direction: column;
+  }
+
+  .stamp-info {
+    grid-template-columns: 1fr;
+  }
+}
