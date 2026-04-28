@@ -31,6 +31,14 @@ text-align:right;
 color:#888 !important;
 }
 
+.mt-60 {
+margin-top: 60px;
+}
+
+.pt-120 {
+padding-top: 120px;
+}
+
 /* ---------------- */
 /* Loading */
 /* ---------------- */
@@ -999,14 +1007,6 @@ margin-bottom:-25px;
   text-align: center;
 }
 
-.mt-60 {
-margin-top: 60px;
-}
-
-.pt-120 {
-padding-top: 120px;
-}
-
 /* 卡片 */
 
 .infoCard{
@@ -1149,6 +1149,21 @@ padding:10px;
     padding-left: 0px;
   }
 
+}
+
+.sheet-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  border: 2px solid #ff5a5f;
+  color: #ff5a5f;
+  border-radius: 999px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.sheet-btn:hover {
+  background: #ff5a5f;
+  color: #fff;
 }
 
 /* card */
