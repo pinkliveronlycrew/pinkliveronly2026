@@ -1355,7 +1355,6 @@ color:#888;
 /* ===== Stamp Event ===== */
 
 .stamp-event {
-  max-width: 900px;
   margin: 0 auto;
   padding: 40px 20px;
 }
@@ -1380,13 +1379,19 @@ color:#888;
   text-align: right;
 }
 
-.hero-tag {
-  display: inline-block;
-  padding: 8px 15px;
-  border: 2px solid #ff5a5f;
-  color: #ff5a5f;
+.stamp-event .hero-tag {
+  display: inline-flex;
+
+  padding: 10px 18px;
+
+  border: 2px solid #ff7d7d;
   border-radius: 999px;
+
+  color: #ff6b6b;
   font-size: 18px;
+  font-weight: 700;
+
+  margin-bottom: 28px;
 }
 
 .stamp-hero h1 {
@@ -1399,7 +1404,7 @@ color:#888;
   margin-bottom: 30px;
 }
 
-.stamp-event .highlight {
+.highlight {
   color: #ff5a5f;
 }
 
@@ -1691,4 +1696,276 @@ color:#888;
   .stamp-info {
     grid-template-columns: 1fr;
   }
+}
+
+.secondSection {
+  padding: 0px 20px 20px 20px;
+}
+
+/* =========================
+   夜市遊戲活動
+========================= */
+
+.game-event{
+}
+
+/* HERO */
+
+.game-hero{
+  display: flex;
+  gap: 48px;
+
+  align-items: flex-start;
+}
+
+/* 左文字 */
+
+.game-event .hero-text{
+  width: 360px;
+  flex-shrink: 0;
+}
+
+.game-event .hero-tag{
+  display: inline-flex;
+
+  padding: 10px 18px;
+
+  border: 2px solid #ff7d7d;
+  border-radius: 999px;
+
+  color: #ff6b6b;
+  font-size: 18px;
+  font-weight: 700;
+
+  margin-bottom: 28px;
+}
+
+.game-hero h1{
+    font-size: 42px;
+    margin-bottom: -20px;
+}
+
+.game-hero h2{
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.game-hero p{
+    line-height: 10px;
+    font-size: 15px;
+}
+
+.game-hero .hero-text {
+  flex: 0.5;
+}
+
+/* 右側卡片 */
+
+.game-cards{
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+  gap: 28px;
+}
+
+.game-card{
+  background: #fff;
+
+  border-radius: 28px;
+  border: 1px solid #f0dede;
+
+  padding: 24px;
+
+  text-align: center;
+}
+
+.game-card img{
+  width: 100%;
+
+  margin-bottom: 20px;
+}
+
+.game-label{
+  display: inline-flex;
+
+  padding: 10px 20px;
+
+  border-radius: 999px;
+
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+
+  margin-bottom: 18px;
+}
+
+.game-label.blue{
+  background: #6caeff;
+}
+
+.game-label.orange{
+  background: #ff8b52;
+}
+
+.game-desc{
+  font-size: 24px;
+  line-height: 1.8;
+
+  color: #333;
+}
+
+.highlight-blue{
+  color: #4d8fff;
+  font-weight: 700;
+}
+
+.highlight-orange{
+  color: #ff7d4d;
+  font-weight: 700;
+}
+
+.game-count{
+  display: inline-flex;
+
+  margin-top: 20px;
+
+  padding: 10px 20px;
+
+  border-radius: 999px;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.game-count.blue{
+  background: #6caeff;
+}
+
+.game-count.orange{
+  background: #ff8b52;
+}
+
+/* Highlight */
+
+.game-highlight{
+  margin-top: 42px;
+
+  display: grid;
+  grid-template-columns: repeat(7,auto);
+
+  align-items: center;
+
+  border-radius: 28px;
+
+  padding: 28px 0px;
+}
+
+.game-highlight .highlight-item{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.game-highlight .icon{
+  width: 62px;
+  height: 62px;
+
+  border-radius: 999px;
+
+  background: #ffeded;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ff6b6b;
+  font-size: 28px;
+}
+
+.game-highlight .text{
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #333;
+
+  font-weight: 600;
+}
+
+.game-highlight .divider{
+  width: 1px;
+  height: 48px;
+
+  background: #f1d9d9;
+
+  margin: 0 24px;
+}
+
+/* =========================
+   RWD
+========================= */
+
+@media(max-width: 1024px){
+
+  .game-hero{
+    flex-direction: column;
+  }
+
+  .game-event .hero-text{
+    width: 100%;
+  }
+
+  .game-cards{
+    width: 100%;
+  }
+
+  .game-highlight{
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .game-highlight .divider{
+    display: none;
+  }
+
+}
+
+@media(max-width: 768px){
+
+  .game-event h1{
+    font-size: 42px;
+  }
+
+  .game-event h2{
+    font-size: 26px;
+  }
+
+  .game-event p{
+    font-size: 18px;
+  }
+
+  .game-cards{
+    grid-template-columns: 1fr;
+  }
+
+  .game-desc{
+    font-size: 20px;
+  }
+
+  .game-highlight{
+    grid-template-columns: 1fr;
+  }
+
+  .game-notice{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .notice-list{
+    flex-direction: column;
+    gap: 10px;
+  }
+
 }
