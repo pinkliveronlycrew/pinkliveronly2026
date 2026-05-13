@@ -329,59 +329,6 @@ d="M7.2 2C4.9 2 3 3.9 3 6.2V19.8C3 22.1 4.9 24 7.2 24C9.5 24 11.4 22.1 11.4 19.8
 
 <script>
 
-
-/* Loading */
-
-const start = Date.now()
-const minTime = 3000
-
-let progress = 0
-
-const bar = document.getElementById("progressFill")
-const text = document.getElementById("progressText")
-
-const timer = setInterval(()=>{
-
-progress += Math.random()*8
-
-if(progress > 100){
-progress = 100
-}
-
-bar.style.width = progress + "%"
-text.innerText = Math.floor(progress) + "%"
-
-if(progress >= 100){
-clearInterval(timer)
-finishLoading()
-}
-
-},120)
-
-
-function finishLoading(){
-
-const elapsed = Date.now() - start
-const remain = Math.max(0,minTime-elapsed)
-
-setTimeout(()=>{
-
-const loader = document.getElementById("loadingScreen")
-
-loader.style.opacity = 0
-
-setTimeout(()=>{
-loader.style.display="none"
-
-document.querySelector(".hero").classList.add("animate")
-
-},600)
-
-},remain)
-
-}
-
-
 /* Mobile menu */
 
 function toggleMenu(){
