@@ -1699,15 +1699,12 @@ color:#888;
 }
 
 .secondSection {
-  padding: 0px 20px 20px 20px;
+  padding: 70px 20px 20px 20px;
 }
 
 /* =========================
    夜市遊戲活動
 ========================= */
-
-.game-event{
-}
 
 /* HERO */
 
@@ -1771,34 +1768,30 @@ color:#888;
 }
 
 .game-card{
+  position: relative;
   background: #fff;
-
+  border: 1px solid #f1c7c7;
   border-radius: 28px;
-  border: 1px solid #f0dede;
-
-  padding: 24px;
-
+  padding: 52px 28px 28px;
+  box-sizing: border-box;
   text-align: center;
 }
 
 .game-card img{
   width: 100%;
-
-  margin-bottom: 20px;
 }
 
 .game-label{
-  display: inline-flex;
-
-  padding: 10px 20px;
-
-  border-radius: 999px;
-
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-
-  margin-bottom: 18px;
+  position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 15px 20px;
+    color: #fff;
 }
 
 .game-label.blue{
@@ -1810,10 +1803,9 @@ color:#888;
 }
 
 .game-desc{
-  font-size: 24px;
   line-height: 1.8;
-
   color: #333;
+  margin: 10px 0px;
 }
 
 .highlight-blue{
@@ -1828,24 +1820,13 @@ color:#888;
 
 .game-count{
   display: inline-flex;
-
   margin-top: 20px;
-
-  padding: 10px 20px;
-
+  padding: 7px 16px;
   border-radius: 999px;
-
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.game-count.blue{
-  background: #6caeff;
-}
-
-.game-count.orange{
-  background: #ff8b52;
+  border: 2px solid #ff7d7d;
+  border-radius: 999px;
+  color: #ff6b6b;
+  font-size: 14px;
 }
 
 /* Highlight */
@@ -1910,7 +1891,6 @@ color:#888;
 @media(max-width: 1024px){
 
   .game-hero{
-    flex-direction: column;
   }
 
   .game-event .hero-text{
@@ -1933,6 +1913,10 @@ color:#888;
 }
 
 @media(max-width: 768px){
+  .game-hero {
+    flex-direction: column;
+    text-align: center;
+  }
 
   .game-event h1{
     font-size: 42px;
@@ -1948,10 +1932,6 @@ color:#888;
 
   .game-cards{
     grid-template-columns: 1fr;
-  }
-
-  .game-desc{
-    font-size: 20px;
   }
 
   .game-highlight{
