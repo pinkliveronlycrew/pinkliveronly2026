@@ -2154,6 +2154,11 @@ color:#888;
   color: #666;
 }
 
+.game-highlight .divider {
+  border-left: 1px solid #F2C7C5;
+  border-right: 0px !important;
+}
+
 .season-icon .bi-sun {
   margin-top: -20px;
 }
