@@ -2128,7 +2128,7 @@ color:#888;
 
   border-radius: 28px;
 
-  padding: 28px 0px;
+  padding: 0px;
 }
 
 .game-highlight .highlight-item{
@@ -2150,7 +2150,7 @@ color:#888;
   justify-content: center;
 
   gap: 8px;
-  font-size: 47px;
+  font-size: 30px;
   color: #666;
 }
 
